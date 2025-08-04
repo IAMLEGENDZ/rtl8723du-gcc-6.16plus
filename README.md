@@ -33,8 +33,8 @@ If any of the packages above are not found check if your distro installs them li
 ##### Installation
 For all distros:
 ```bash
-git clone git://github.com/IAMLEGENDZ/rtl8723du.git
-cd rtl8723du
+git clone git://github.com/IAMLEGENDZ/rtl8723du-gcc-6.16plus.git
+cd rtl8723du-gcc-6.16plus
 make
 sudo make install
 ```
@@ -49,7 +49,7 @@ sudo modprobe -v 8723du          #This loads the module
 
 When your kernel changes, then you need to do the following:
 ```bash
-cd ~/rtl8723du
+cd ~/rtl8723du-gcc-6.16plus
 git pull
 make clean
 make
@@ -61,8 +61,8 @@ Remember, this MUST be done whenever you get a new kernel - no exceptions.
 ##### Installation with module signing for SecureBoot
 For all distros:
 ```bash
-git clone git://github.com/IAMLEGENDZ/rtl8723du.git
-cd rtl8723du
+git clone git://github.com/IAMLEGENDZ/rtl8723du-gcc-6.16plus.git
+cd rtl8723du-gcc-6.16plus
 make
 sudo make sign-install
 ```
